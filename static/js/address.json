@@ -1,0 +1,175 @@
+{
+    "state": [
+        "------",
+        "Gujarat",
+        "Maharashtra",
+        "Rajasthan",
+        "Punjab"
+    ],
+    "gujarat": [
+        "------",
+        "Ahmedabad",
+        "Vadodara",
+        "Surat",
+        "Rajkot",
+        "Gandhinagar"
+    ],
+    "maharashtra": [
+        "------",
+        "Mumbai",
+        "Pune",
+        "Nagpur",
+        "Nashik",
+        "Thane"
+    ],
+    "rajasthan": [
+        "------",
+        "Jaipur",
+        "Jodhpur",
+        "Udaipur",
+        "Ajmer"
+    ],
+    "punjab": [
+        "------",
+        "Amritsar",
+        "Ludhiana",
+        "Patiala"
+    ],
+    "ahmedabad": [
+        "------",
+        "Ambawadi",
+        "Ranip",
+        "Ashram road",
+        "Bapunagar",
+        "Dariapur"
+    ],
+    "vadodara": [
+        "------",
+        "Abhishek colony",
+        "Airport Circle",
+        "Akota",
+        "Alkapuri",
+        "Ampad"
+    ],
+    "surat": [
+        "------",
+        "Abhay nagar",
+        "Adamwad",
+        "Adjan south",
+        "Amali wadi",
+        "Aman Nagar"
+    ],
+    "rajkot": [
+        "------",
+        "AJ Park",
+        "Aalap Avenue",
+        "AIR Quarter",
+        "Balaji Park",
+        "Bansi Park"
+    ],
+    "gandhinagar": [
+        "------",
+        "G-6",
+        "G-4",
+        "Ch-2",
+        "Pathika"
+    ],
+    "mumbai": [
+        "------",
+        "Andheri East",
+        "Antop Hill",
+        "Bandra East",
+        "Chandivali",
+        "Dadar East"
+    ],
+    "pune": [
+        "------",
+        "Ajmera",
+        "Bajirao road",
+        "Baner",
+        "Chimbali",
+        "DI MIDC"
+    ],
+    "nagpur": [
+        "------",
+        "AMD line",
+        "Bajeria",
+        "Bajar chowk",
+        "CRPF Area",
+        "Datawadi"
+    ],
+    "nashik": [
+        "------",
+        "Aad Gaon",
+        "Bagul wada",
+        "Bappa Chowk",
+        "CBS Chowk",
+        "Dade Gaon",
+        "Darbar"
+    ],
+    "thane": [
+        "------",
+        "Ambica nagar",
+        "Anjurdive",
+        "Kasheli",
+        "Junagaon",
+        "Gaodevi",
+        "Khopat"
+    ],
+    "jaipur": [
+        "------",
+        "Aanaj Mandi",
+        "Acharwala",
+        "Babu ka Tiba",
+        "Chak Baori",
+        "Deepak Colony",
+        "Dev Nagar"
+    ],
+    "jodhpur": [
+        "------",
+        "Abhay Garh",
+        "Basni",
+        "Bhadastya",
+        "Chainpura",
+        "Dev nagar"
+    ],
+    "udaipur": [
+        "------",
+        "AIR Housing Colony",
+        "Ahar",
+        "Bedla",
+        "Chandpole",
+        "Dewali"
+    ],
+    "ajmer": [
+        "------",
+        "Agra Gate Chowk",
+        "BPL Colony",
+        "Beer",
+        "Chamar Ghati"
+    ],
+    "amritsar": [
+        "------",
+        "Airport road",
+        "Baba Sahib Chowk Area",
+        "Basarke",
+        "Cycle Market",
+        "Dam Gunj"
+    ],
+    "ludhiana": [
+        "------",
+        "Aggar Nagar",
+        "Amardas",
+        "Bajra",
+        "Bhoda",
+        "Churan Pur"
+    ],
+    "patiala": [
+        "------",
+        "Ablowal",
+        "Alhoran",
+        "Bir Bauran",
+        "Civil lines",
+        "DLF Colony"
+    ]
+}

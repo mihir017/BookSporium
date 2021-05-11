@@ -1,0 +1,343 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSporium</title>
+    <link rel="stylesheet" href="{% static 'css/book_show.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <script src="https://kit.fontawesome.com/152ca9cf76.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header Part -->
+    <header>
+        <div class="upper-header">
+            <div class="overlay">
+                <div class="container">
+                    <nav>
+                        <div class="logo">
+                            <a href="{% url 'homePage' %}">
+                                <img src="{% static 'images/BOOKSPORIUM.png' %}" alt="Booksporium_Logo"></a>
+                        </div>
+                        <div class="mid-title">
+                            <form action="" id="search">
+                                <i class="fas fa-map-marker-alt location_icon"></i>
+                                <select name="location" id="location">
+                                    <option value="ranip">Ranip</option>
+                                    <option value="bodakdev">Bodakdev</option>
+                                    <option value="sabarmati">Sabarmati</option>
+                                    <option value="vadaj">Vadaj</option>
+                                    <option value="shastri Nager">Shastri Nager</option>
+                                    <option value="nikol">Nikol</option>
+                                </select>
+                                <i class="fas fa-search search"></i>
+                                <input type="text" name="search_name" id="search_name"
+                                    placeholder="Search Any BookStore, Books, e-Book">
+                            </form>
+                        </div>
+                        <div class="account" style="width: 230px;">
+                            <a href="#"><i class="far fa-bell"></i></a>
+                            <a href="{% url 'chat' %}"><i class="far fa-comments"></i></a>
+                            <div class="user-click">
+                                <a href="#" class="user-icon"><i class="fas fa-user-circle" id="user"></i></a>
+                                <div class="user-option" id="box">
+                                    <div class="profile-option">
+                                        <div class="user-img">
+                                            <i class="fas fa-user-circle"></i>
+                                        </div>
+                                        <div class="user-detail">
+                                            <h3 class="user-name">Mihir Prajapati</h3>
+                                            <a href="{% url 'profile' %}" class="edit-detail">View and Edit Profile</a>
+                                        </div>
+                                    </div>
+                                    <div class="option">
+                                        <div class="option-detail">
+                                            <i class="fas fa-database"></i>
+                                            <a href="{% url 'myads' %}" class="my-add">My Adds</a>
+                                        </div>
+                                        <div class="option-detail">
+                                            <i class="far fa-address-card"></i>
+                                            <a href="#" class="my-add">Buy Business Package</a>
+                                        </div>
+                                    </div>
+                                    <div class="option">
+                                        <div class="option-detail">
+                                            <i class="far fa-address-card"></i>
+                                            <a href="#" class="my-add">Help</a>
+                                        </div>
+                                        <div class="option-detail">
+                                            <i class="fas fa-sliders-h"></i>
+                                            <a href="#" class="my-add">Settings</a>
+                                        </div>
+                                    </div>
+                                    <div class="option">
+                                        <div class="option-detail">
+                                            <i class="fas fa-sign-out-alt"></i>
+                                            <a href="{% url 'logOut' %}" class="my-add">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="{% url 'post_book_ad' %}" class="btn sell-btn">sell</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="lower-header">
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a href="/home_page/search_all/book_store" class="nav-link">Book Store</a></li>
+                    <li>
+                        <a href="#" class="nav-link">e-Book</a>
+                        <div class="drop-down">
+                            <div class="content">
+                                <div class="row">
+                                    <ul>
+                                        <li><a href="/home_page/search/comic" class="nav-link">Comic</a></li>
+                                        <li><a href="/home_page/search/adventure" class="nav-link">Adventure</a></li>
+                                        <li><a href="/home_page/search/sci-fi" class="nav-link">Sci-Fi</a></li>
+                                        <li><a href="/home_page/search/business" class="nav-link">Business</a></li>
+                                        <li><a href="/home_page/search/programming" class="nav-link">Programming</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <ul>
+                                        <li><a href="/home_page/search/horror" class="nav-link">Horror</a></li>
+                                        <li><a href="/home_page/search/thriller" class="nav-link">Thriller</a></li>
+                                        <li><a href="/home_page/search/kids" class="nav-link">Kids</a></li>
+                                        <li><a href="/home_page/search/grammer" class="nav-link">Grammer</a></li>
+                                        <li><a href="/home_page/search/design" class="nav-link">Design</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <ul>
+                                        <li><a href="/home_page/search/GPSC" class="nav-link">UPSC/GPSC</a></li>
+                                        <li><a href="/home_page/search/exam" class="nav-link">Goverment Exam</a></li>
+                                        <li><a href="/home_page/search/bsc" class="nav-link">B.sc/M.sc</a></li>
+                                        <li><a href="/home_page/search/bcom" class="nav-link">B.com/M.com</a></li>
+                                        <li><a href="/home_page/search/arts" class="nav-link">Arts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="row">
+                                    <ul>
+                                        <li><a href="/home_page/search/be" class="nav-link">B.E/M.E</a></li>
+                                        <li><a href="/home_page/search/school" class="nav-link">School</a></li>
+                                        <li><a href="/home_page/search/science" class="nav-link">Science</a></li>
+                                        <li><a href="/home_page/search/commerce" class="nav-link">Commerce</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="/home_page/search_all/book" class="nav-link">Books</a></li>
+                    <li><a href="#" class="nav-link">Rental Book</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Show Book details -->
+    <section class="book-detail">
+        <div class="container">
+            <div id="grid">
+                <div class="grid-column-1">
+                    <div class="book-box">
+                        <a href=""><i class="fas fa-chevron-left"></i></a>
+                        <div class="book-img">
+                            <img src="{{user_ad.image_1.url}}" alt="book-2">
+                        </div>
+                        <a href=""><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                    <div class="book-img-list">
+                        <div class="book-1 book">
+                            <img src="{{user_ad.image_1.url}}" alt="book-2" style="width: 100%;height: 100%;">
+                        </div>
+                        <div class="book-2 book">
+                            <img src="{{user_ad.image_2.url}}" alt="book-2" style="width: 100%;height: 100%;">
+                        </div>
+                        <div class="book-3 book">
+                            <img src="{{user_ad.image_3.url}}" alt="book-2" style="width: 100%;height: 100%;">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <h3 class="des-title">Description</h3>
+                        <p>{{ user_ad.description }}</p>
+                    </div>
+                </div>
+                <div class="grid-column-2">
+                    <div class="row">
+                        <div class="book-detail">
+                            <div class="head">
+                                <h2>{{ user_ad.book_price }} Rs</h2>
+                                <a href=""><i class="far fa-heart"></i></a>
+                            </div>
+                            <h4 class="book-name">{{user_ad.book_name}}</h4>
+                            <p class="author">Written by :- {{user_ad.book_author}}</p>
+                            <div class="address">
+                                <p class="addr">{{ user_ad.area }}, {{ user_ad.city }}</p>
+                                <p class="km">1.4 km</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="book-detail">
+                            <h3>Seller Description</h3>
+                            <div class="head-2">
+                                    <div class="profile">
+                                        <div class="user-img">
+                                            <i class="fas fa-user-circle"></i>
+                                        </div>
+                                        <div class="user-detail">
+                                            <h3 class="user-name">{{ user_ad.seller.full_name }}</h3>
+                                            <p class="time">Menber Since may, 2019</p>
+                                        </div>
+                                        <a href="seller_profile/{{ user_ad.id }}"><i class="fas fa-chevron-right"></i></a>
+                                    </div>
+                                
+                            </div>
+                            <div class="seller-btn">
+                                <a href="chat_box/{{ user_ad.id }}" class="btn">Chat with Seller</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <div class="logo">
+                        <img src="{% static 'images/BOOKSPORIUM_footer.png' %}" alt="">
+                    </div>
+                    <h4>BookSporium is for Buy and earn Money by selling Your old Book.</h5>
+                </div>
+                <div class="row">
+                    <h5 class="footer-title">About us</h5>
+                    <ul>
+                        <li><a href="#">Book, Magezin</a></li>
+                        <li><a href="#">Sell any Book</a></li>
+                        <li><a href="#">Download e-Book</a></li>
+                        <li><a href="#">Rented Book</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <h5 class="footer-title">Contact us</h5>
+                    <ul>
+                        <li><a href="#">3/13 naman Street</a></li>
+                        <li><a href="#">Borivali, mumbai</a></li>
+                        <li><a href="#">Maharastra-45128</a></li>
+                        <li><a href="#">123-154-7648</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <h5 class="footer-title">Follow us</h5>
+                    <div class="social_icon">
+                        <a href="#"><i id="fb" class="fab fa-facebook"></i></a>
+                        <a href="#"><i id="instagram" class="fab fa-instagram"></i></a>
+                        <a href="#"><i id="pinterest" class="fab fa-pinterest"></i></a>
+                        <a href="#"><i id="twitter" class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p id="copyright">Copyright &copy;: www.booksporium.com</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/profile.js' %}"></script>
+    <script src="{% static 'js/post_book.js' %}"></script>
+    <!-- <script>
+        // User Profile
+        // const check_profile = document.getElementById("check_profile");
+        const user_option = document.querySelector(".user-option");
+        const body = document.querySelector("body");
+        const box = document.getElementById("box");
+        // const account = document.querySelector(".account");
+
+        body.addEventListener("click",(e) => {
+            console.log(e.target)
+            if (e.target.id == "user"){
+                user_option.style.display = "block";
+            }
+            else if(e.target.id == "option"){
+                box.style.display = "block";
+            }
+            else {
+                box.style.display = "none";
+                user_option.style.display = "none";
+            }
+        })
+
+        async function address(){
+            // const res = await fetch("../static/js/address.json");
+            const res = await fetch("../../static/js/profile.js");
+
+            const data = await res.json();
+            return data;
+        }
+
+        const state = document.getElementById("state");
+        const city = document.getElementById("city");
+        const area = document.getElementById("area");
+        const city_box = document.getElementById("city_box");
+        const area_box = document.getElementById("area_box");
+        state_output = "";
+
+        address()
+            .then((data) => {
+                data.state.forEach(function(state){
+                    state_output += `
+                        <option value="${state.toLowerCase()}"> ${state} </option>
+                    `;
+                })
+                state.innerHTML = state_output;
+                // console.log(data.state);
+            });
+
+        state.addEventListener("change",function(e){
+            const state_name = e.target.value;
+            // console.log(state_name);
+            city_output = "";
+            address()
+                .then((data) => {
+                    data[state_name].forEach(function(city){
+                        city_output += `
+                            <option value="${city.toLowerCase()}">${city}</option>
+                        `;    
+                    });
+                    city.innerHTML = city_output;
+                    city_box.style.display = "block";
+                    console.log(data[state_name]);
+                });
+        })
+
+        city.addEventListener("change",function(e){
+            const city_name = e.target.value;
+            // console.log(city_name);
+            area_output = "";
+            address()
+                .then((data) => {
+                    data[city_name].forEach(function(area){
+                        area_output += `
+                            <option value="${area.toLowerCase()}">${area}</option>
+                        `;  
+                    });
+                    area.innerHTML = area_output;
+                    area_box.style.display = "block";
+                    console.log(data[city_name]);
+                });
+        })
+    </script> -->
+</body>
+
+</html>

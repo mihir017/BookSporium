@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --gray_color : rgba(240, 241, 242, 1);
+    --blue_color : rgba(47, 59, 78, 1);
+    --red_color : rgba(217, 30, 55, 1);
+    --ubuntu : 'Ubuntu', sans-serif;
+    --titillium : 'Titillium Web', sans-serif;
+}
+/* Upper-Header */
+.upper-header{
+    height: 50px;
+    width: 100%;
+    background: var(--blue_color);
+    /* position: static; */
+    box-shadow: 1px 5px 10px rgba(47, 59, 78, 0.5);
+}
+/* .overlay{
+    background-color: rgba(47, 59, 78, 0.5);
+    position: absolute;
+    height: 450px;
+    width: 100%;
+} */
+.container{
+    margin: 0 70px;
+}
+.upper-header nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: var(--gray_color);
+    font-family: var(--ubuntu);
+}
+.upper-header *{
+    z-index: 10px;
+}
+.upper-header nav .logo{
+    height: 20px;
+    width: 200px;
+}
+.upper-header nav .logo img{
+    height: 100%;
+    width: 100%;
+}
+.upper-header nav .account{
+    display: flex;
+    width: 190px;
+    justify-content: space-between;
+    /* position: relative; */
+}
+/* User Option */
+.upper-header nav .account i{
+    font-size: 20px;
+    color: white;
+}
+.upper-header nav .account i:hover{
+    color: #E95950;
+    /* box-shadow: 1px 5px 10px rgba(217, 30, 55, 0.6);    */
+}
+/* .upper-header nav .account .user-click a:hover ~ .user-option{
+    display: block;
+    top: 55px;
+} */
+.upper-header nav .account .user-click .user-option{
+    position: absolute;
+    width: 260px;
+    padding: 20px;
+    right: 20px;
+    top: 50px;
+    background: var(--gray_color);
+    display: none;
+}
+.upper-header nav .account .user-click .user-option .profile-option{
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(47, 59, 78, 0.5);
+    padding-bottom: 15px;
+}
+.upper-header nav .account .user-click .user-option .profile-option .user-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.upper-header nav .account .user-click .user-option .profile-option .user-img i{
+    font-size: 40px;
+    margin-top: 8px;
+    color: var(--blue_color);
+}
+.upper-header nav .account .user-click .user-option .profile-option .user-detail .user-name{
+    font-size: 18px;
+    font-family: var(--titillium);
+    color: var(--blue_color);
+}
+.upper-header nav .account .user-click .user-option .profile-option .user-detail .edit-detail{
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: var(--titillium);
+    color: var(--blue_color);
+}
+.upper-header nav .account .user-click .user-option .profile-option .user-detail .edit-detail:hover{
+    color: black;
+}
+.upper-header nav .account .user-click .user-option .option{
+    margin: 5px 0;
+    border-bottom: 1px solid rgba(47, 59, 78, 0.5);
+}
+.upper-header nav .account .user-click .user-option .option:last-child{
+    border: none;
+} 
+.upper-header nav .account .user-click .user-option .option .option-detail{
+    margin: 25px 0;
+    padding: 0 8px;
+    align-items: center;
+} 
+.upper-header nav .account .user-click .user-option .option .option-detail:last-child{
+    margin-bottom: 20px;
+} 
+.upper-header nav .account .user-click .user-option .option .option-detail i{
+    margin-right: 20px;
+    font-size: 20px;
+    color: var(--blue_color);
+} 
+.upper-header nav .account .user-click .user-option .option .option-detail a{
+    font-size: 14px;
+    color: var(--blue_color);
+} 
+.upper-header nav .account .user-click .user-option .option .option-detail a:hover{
+    text-decoration: underline;
+}
+.upper-header nav .account .btn{
+    background-color: #E95950;
+    padding: 5px 17px;
+    margin-top: -5px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    letter-spacing: 2px;
+}
+.upper-header nav .account .btn:hover{
+    box-shadow: 1px 5px 10px rgba(217, 30, 55, 0.6);   
+}
+.upper-header .mid-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -18px;
+}
+/* .upper-header #search{
+    margin-top: 10px;
+} */
+.upper-header #search #search_name{
+    width: 400px;
+    padding: 5px 37px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--gray_color);
+    outline: none;
+    color: var(--gray_color);
+    font-family: var(--titillium);
+}
+#search{
+    position: relative;
+}
+.upper-header #search #search_name::placeholder{
+    color: var(--gray_color);
+    letter-spacing: 1px;
+}
+.upper-header #search .search{
+    color: var(--gray_color);
+    font-size: 13px;
+    position: absolute;
+    top: 11px;
+    left: 13.5rem;
+}
+#location{
+    width: 200px;
+    padding: 5px 28px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--gray_color);
+    outline: none;
+    color: var(--gray_color);
+    font-family: var(--titillium);
+    margin-right: 10px;
+}
+.location_icon{
+    color: var(--red_color);
+    font-size: 14px;
+    position: absolute;
+    top: 11px;
+    left: 2px;
+}
+option{
+    color: black;
+    margin: 10px 0;
+    /* padding: 8px 0; */
+}
+
+/* lower-header */
+.lower-header{
+    height: 40px;
+    width: 100%;
+    /* margin-top: 70px;
+    margin-bottom: 600px; */
+    color: var(--gray_color);
+    box-shadow: 1px 5px 10px rgba(47, 59, 78, 0.5);
+    /* border: 1px solid red; */
+}
+.lower-header ul li{
+    padding: 10px 10px;
+}
+.lower-header ul .nav-link{
+    color: var(--blue_color);
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-list .drop-down{
+    position: absolute;
+    top: 100px;
+    /* left: 0; */
+    display:  none;
+}
+.nav-list .drop-down .content{
+    display: flex;
+    padding: 10px;
+    /* border: 1px solid gray; */
+    background-color: var(--blue_color);
+}
+.nav-list .drop-down .content .row{
+    padding: 10px 15px;
+    border-right: 1px solid rgba(47, 59, 78, 0.5);
+}
+.nav-list .drop-down .content .row li{
+    list-style: none;
+}
+.nav-list .drop-down .content .row .nav-link{
+    color: var(--gray_color);
+    font-weight: 300;
+
+}
+.nav-list .drop-down .content .row:last-child{
+    border-right: none;
+}
+.lower-header .nav-list{
+    display: flex;
+    justify-content: space-around;
+}
+.lower-header ul li:hover{
+    border-bottom: 3px solid var(--red_color);
+}
+.lower-header ul li .drop-down li:hover{
+    border-bottom: 1px solid var(--red_color);
+}
+.lower-header ul li:hover .drop-down{
+    display: block;
+    top: 95px;
+    transition: all .3s ease;
+}
+
+/* book details */
+#grid{
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin: 50px 0;
+}
+/* grid-column-1 */
+#grid .grid-column-1 .book-box{
+    width: 80%;
+    margin: auto;
+    height: 450px;
+    background: #263b4c;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#grid .grid-column-1 .book-box i{
+    color: var(--gray_color);
+    font-size: 30px;
+    z-index: .8;
+}
+#grid .grid-column-1 .book-box .book-img{
+    width: 500px;
+    height: 450px;
+}
+#grid .grid-column-1 .book-box img{
+    width: 100%;
+    height: 100%;
+}
+#grid .grid-column-1 .book-img-list{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 77px;
+}
+#grid .grid-column-1 .book-img-list .book{
+    width: 60px;
+    height: 60px;
+    margin-right: 25px;
+    background-color: gray;
+}
+#grid .grid-column-1 .description{
+    width: 80%;
+    margin: 30px auto;
+}
+#grid .grid-column-1 .description .des-title{
+    font-size: 20px;
+    font-family: var(--ubuntu);
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+#grid .grid-column-1 .description p{
+    font-size: 14px;
+    font-family: var(--titillium);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+/* grid-column-2 */
+#grid .grid-column-2 .row{
+    padding: 15px 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(47, 59, 78, 0.5);
+}
+#grid .grid-column-2 .row .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#grid .grid-column-2 .row .head h2{
+    font-size: 22px;
+    font-family: var(--titillium);
+    font-weight: 600;
+    color: #263b4c;
+}
+#grid .grid-column-2 .row .head i{
+    font-size: 18px;
+    color: #E95950;
+}
+#grid .grid-column-2 .row .book-name{
+    font-size: 18px;
+    color: #263b4c;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: var(--ubuntu);
+}
+#grid .grid-column-2 .row .author{
+    font-size: 14px;
+    font-family: var(--titillium);
+    color: rgba(47, 59, 78, 0.9);
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+#grid .grid-column-2 .row .address{
+    display: flex;
+    justify-content: space-between;
+}
+#grid .grid-column-2 .row .address .addr{
+    font-family: var(--titillium);
+    font-size: 14px;
+    color: rgba(47, 59, 78, 0.8);
+}
+#grid .grid-column-2 .row .address .km{
+    font-family: var(--titillium);
+    font-size: 14px;
+    color: rgba(47, 59, 78, 0.8);
+}
+#grid .grid-column-2 .row h3{
+    font-size: 20px;
+    color: var(--blue_color);
+    font-family: var(--ubuntu);
+    font-weight: 500;
+}
+#grid .grid-column-2 .row .profile{
+    display: flex;
+    margin-top: 15px;
+}
+#grid .grid-column-2 .row .profile .user-img{
+    width: 50px;
+    height: 50px;
+}
+#grid .grid-column-2 .row .profile .user-img i{
+    font-size: 50px;
+    color: #263b4c;
+}
+#grid .grid-column-2 .row .profile .user-detail{
+    margin-left: 32px;
+    padding-top: 15px;
+    width: 260px;
+}
+#grid .grid-column-2 .row .profile .user-detail .user-name{
+    color: #263b4c;
+    font-size: 18px;
+}
+#grid .grid-column-2 .row .profile .user-detail .time{
+    color: #263b4c;
+    font-family: var(--titillium);
+    letter-spacing: 1px;
+    font-size: 12px;
+    margin-top: -2px;
+}
+#grid .grid-column-2 .row .profile a{
+    margin-left: 10px;
+    padding-top: 15px;
+}
+#grid .grid-column-2 .row .profile i{
+    color: #263b4c;
+    font-size: 25px;
+    padding-top: 8px;
+}
+#grid .grid-column-2 .row .book-detail .seller-btn{
+    margin-top: 50px;
+}
+#grid .grid-column-2 .row .book-detail .seller-btn .btn{
+    padding: 10px 118px;
+    letter-spacing: 1px;
+    border: 1px solid rgba(47, 59, 78, 0.5);
+    /* width: 499px; */
+    color: #263b4c;
+    text-align: center;
+}
+#grid .grid-column-2 .row .book-detail .seller-btn .btn:hover{
+    box-shadow: 1px 2px 20px rgba(47, 59, 78, 0.2);
+}

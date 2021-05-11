@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --gray_color : rgba(240, 241, 242, 1);
+    --blue_color : rgba(47, 59, 78, 1);
+    --red_color : rgba(217, 30, 55, 1);
+    --ubuntu : 'Ubuntu', sans-serif;
+    --titillium : 'Titillium Web', sans-serif;
+}
+.book-post-sell .post-book{
+    margin: 30px 0;
+}
+.book-post-sell .post-book .post-title{
+    text-align: center;
+    font-family: var(--ubuntu);
+    color: var(--blue_color);
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.book-post-sell .post-book #post-book-ad .group-1{
+    border: 1px solid rgba(47, 59, 78, .5);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.book-post-sell .post-book #post-book-ad .group-1 .group-title{
+    font-family: var(--ubuntu);
+    color: var(--blue_color);
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.book-post-sell .post-book #post-book-ad .group-1 label{
+    display: block;
+    font-family: var(--titillium);
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.book-post-sell .post-book #post-book-ad .group-1 .book_detail{
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid rgba(47, 59, 78, .5);
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 3px;
+    font-size: 16px;
+    color: var(--blue_color);
+}
+.book-post-sell .post-book #post-book-ad .group-1 textarea{
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid rgba(47, 59, 78, .5);
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 3px;
+    font-size: 16px;
+    color: var(--blue_color);
+}
+.book-post-sell .post-book #post-book-ad .group-1 .desc-info{
+    font-size: 14px;
+    font-family: var(--titillium);
+    color: rgba(47, 59, 78, 1);
+    margin-bottom: 10px;
+}
+.book-post-sell .post-book #post-book-ad .group-1 .image-group{
+    display: grid;
+    width: 55%;
+    grid-template-columns: 0fr 0fr 0fr;
+    grid-gap: 10px;
+}
+.book-post-sell .post-book #post-book-ad .group-1 .image-group .wrapper{
+    width: 100px;
+    height: 100px;
+    border: 1px dashed rgba(47, 59, 78, .5);
+    /* background: url("./images/book-1.webp"); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 5px;
+}
+.book-post-sell .post-book #post-book-ad .group-1 .image-group .wrapper .post-img{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 100;
+    display: none;
+    /* border: 1px dashed rgba(47, 59, 78, .5) */
+}
+.book-post-sell .post-book #post-book-ad .group-1 .image-group .wrapper .upload{
+    color: rgba(47, 59, 78, .5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 35px 30px;
+    font-size: 30px;
+}
+.book-post-sell .post-book #post-book-ad .group-1 .address{
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-family: var(--titillium);
+    color: var(--blue_color);
+    font-size: 16px;
+    width: 40%;
+    margin-top: 3px;
+    outline: none;
+}
+.book-post-sell .post-book #post-book-ad .group-1 #area{
+    margin-bottom: 15px;
+}
+.book-post-sell .post-book #post-book-ad .btn{
+    padding: 8px 20px;
+    border-radius: 5px;
+    letter-spacing: .5px;
+    width: 10%;
+    outline: none;
+    font-size: 14px;
+    background-color: #D91E37;
+    color: var(--gray_color);
+    border: 1px solid #D91E37;
+    font-family: var(--titillium);
+    cursor: pointer;
+}
+.book-post-sell .post-book #post-book-ad .btn:hover{
+    box-shadow: 1px 5px 10px rgba(217, 30, 55, 0.6);
+}

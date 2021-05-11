@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --gray_color : rgba(240, 241, 242, 1);
+    --blue_color : rgba(47, 59, 78, 1);
+    --red_color : rgba(217, 30, 55, 1);
+    --ubuntu : 'Ubuntu', sans-serif;
+    --titillium : 'Titillium Web', sans-serif;
+}
+/* Upper-Header */
+.upper-header{
+    height: 400px;
+    width: 100%;
+    background: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 5px 10px rgba(47, 59, 78, 0.5);
+}
+.overlay{
+    background-color: rgba(47, 59, 78, 0.5);
+    position: absolute;
+    height: 400px;
+    width: 100%;
+}
+.container{
+    margin: 0 70px;
+}
+.upper-header nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+a{
+    text-decoration: none;
+    color: var(--gray_color);
+    font-family: var(--ubuntu);
+}
+.upper-header nav .account{
+    display: flex;
+    width: 190px;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+}
+/* User Option */
+.upper-header nav .account i{
+    font-size: 20px;
+    color: white;
+}
+.upper-header nav .account i:hover{
+    color: #E95950;
+    /* box-shadow: 1px 5px 10px rgba(217, 30, 55, 0.6);    */
+}
+/* .upper-header nav .account .user-click .user-option{
+    display: block;
+    top: 75px;
+} */
+.upper-header nav .account .user-click .user-option{
+    position: absolute;
+    width: 250px;
+    padding: 20px;
+    right: 20px;
+    top: 68px;
+    background: var(--gray_color);
+    display: none;
+}
+.upper-header nav .account .user-click .user-option .profile-option{
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(47, 59, 78, 0.5);
+    padding-bottom: 15px;
+}
+.upper-header nav .account .user-click .user-option .profile-option .user-img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.upper-header nav .account .user-click .user-option .profile-option .user-img i{
+    font-size: 40px;
+    margin-top: 8px;
+    color: var(--blue_color);
+}
+.upper-header nav .account .user-click .user-option .profile-option .user-detail .user-name{
+    font-size: 18px;
+    font-family: var(--titillium);
+    color: var(--blue_color);
+}
+.upper-header nav .account .user-click .user-option .profile-option .user-detail .edit-detail{
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: var(--titillium);
+    color: var(--blue_color);
+}
+.upper-header nav .account .user-click .user-option .profile-option .user-detail .edit-detail:hover{
+    color: black;
+}
+.upper-header nav .account .user-click .user-option .option{
+    margin: 5px 0;
+    border-bottom: 1px solid rgba(47, 59, 78, 0.5);
+}
+.upper-header nav .account .user-click .user-option .option:last-child{
+    border: none;
+} 
+.upper-header nav .account .user-click .user-option .option .option-detail{
+    margin: 25px 0;
+    padding: 0 8px;
+    align-items: center;
+} 
+.upper-header nav .account .user-click .user-option .option .option-detail:last-child{
+    margin-bottom: 20px;
+} 
+.upper-header nav .account .user-click .user-option .option .option-detail i{
+    margin-right: 20px;
+    font-size: 20px;
+    color: var(--blue_color);
+} 
+.upper-header nav .account .user-click .user-option .option .option-detail a{
+    font-size: 14px;
+    color: var(--blue_color);
+} 
+.upper-header nav .account .user-click .user-option .option .option-detail a:hover{
+    text-decoration: underline;
+}
+.upper-header nav .account .btn{
+    background-color: #E95950;
+    padding: 7px 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+.upper-header nav .account .btn:hover{
+    box-shadow: 1px 5px 10px rgba(217, 30, 55, 0.6);   
+}
+.upper-header nav .sign{
+    /* padding-left: 40px; */
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    top: -4px;
+}
+.upper-header nav .sign:hover{
+    border-bottom: 2px solid var(--gray_color);
+}
+.upper-header .mid-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.upper-header .mid-title .header-h2{
+    font-size: 35px;
+    font-family: var(--ubuntu);
+    color: var(--gray_color);
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.upper-header #search{
+    margin-top: 10px;
+}
+.upper-header #search #search_name{
+    width: 500px;
+    padding: 5px 37px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--gray_color);
+    outline: none;
+    color: var(--gray_color);
+    font-family: var(--titillium);
+}
+#search{
+    position: relative;
+}
+.upper-header #search #search_name::placeholder{
+    color: var(--gray_color);
+    letter-spacing: 1px;
+}
+.upper-header #search .search{
+    color: var(--gray_color);
+    font-size: 13px;
+    position: absolute;
+    top: 13px;
+    left: 12.5rem;
+}
+#location{
+    width: 180px;
+    padding: 5px 28px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--gray_color);
+    outline: none;
+    color: var(--gray_color);
+    font-family: var(--titillium);
+    margin-right: 10px;
+}
+.location_icon{
+    color: var(--red_color);
+    font-size: 15px;
+    position: absolute;
+    top: 12px;
+    left: 7px;
+}
+option{
+    color: black;
+    margin: 10px 0;
+    /* padding: 8px 0; */
+}
+
+/* lower-header */
+.lower-header{
+    height: 40px;
+    width: 100%;
+    color: var(--gray_color);
+    box-shadow: 1px 5px 10px rgba(47, 59, 78, 0.5);
+    /* border: 1px solid red; */
+}
+.lower-header ul li{
+    padding: 11px 10px;
+}
+.lower-header ul .nav-link{
+    color: var(--blue_color);
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-list .drop-down{
+    position: absolute;
+    top: 444px;
+    /* left: 0; */
+    display:  none;
+}
+.nav-list .drop-down .content{
+    display: flex;
+    padding: 10px;
+    /* border: 1px solid gray; */
+    background-color: var(--blue_color);
+}
+.nav-list .drop-down .content .row{
+    padding: 0 10px;
+    border-right: 1px solid rgba(47, 59, 78, 0.5);
+}
+.nav-list .drop-down .content .row li{
+    list-style: none;
+}
+.nav-list .drop-down .content .row .nav-link{
+    color: var(--gray_color);
+    font-size: 14px;
+    font-weight: 300;
+
+}
+.nav-list .drop-down .content .row:last-child{
+    border-right: none;
+}
+.lower-header .nav-list{
+    display: flex;
+    justify-content: space-around;
+}
+.lower-header ul li:hover{
+    border-bottom: 2px solid var(--red_color);
+}
+.lower-header ul li .drop-down li:hover{
+    border-bottom: 1px solid var(--red_color);
+}
+.lower-header ul li:hover .drop-down{
+    display: block;
+    top: 444px;
+    transition: all .3s ease;
+}
+
+/* BookStore, book sell */
+.bookSell{
+    margin: 30px 0;
+}
+.bookSell .bookSell-title{
+    font-size: 30px;
+    font-family: var(--titillium);
+    color: var(--blue_color);
+    margin-bottom: 20px;
+}
+.bookSell .show-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.bookSell .show-card .card{
+    width: 210px;
+    height: 280px;
+    padding: 10px 14px;
+    /* border: 1px solid gray; */
+    margin-bottom: 30px;
+    margin-right: 25px;
+    cursor: pointer;
+    border: 1px solid rgba(47, 59, 78, 0.5);
+}
+.bookSell .show-card .card:hover{
+    box-shadow: 2px 4px 5px rgb(0 0 0 / 30%);
+}
+
+.bookSell .show-card .card .card-img{
+    width: 180px;
+    height: 110px;
+}
+.bookSell .show-card .card .card-img img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 4px 5px rgba(47, 59, 78, 0.5);
+}
+.bookSell .show-card .card .card-body{
+    padding: 12px 0;
+}
+.bookSell .show-card .card .card-body .card-title{
+    font-size: 18px;
+    font-family: var(--ubuntu);
+    color: var(--blue_color);
+    margin-bottom: 5px;
+}
+.bookSell .show-card .card .card-body .book-detail{
+    color: var(--blue_color);
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: var(--titillium);
+}
+.bookSell .show-card .card .card-body .address{
+    color: var(--blue_color);
+    font-family: var(--titillium);
+    font-size: 12px;
+}
+.bookSell .show-card .card .card-body .distance{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.bookSell .show-card .card .card-body .distance .km{
+    color: var(--blue_color);
+    font-size: 12px;
+    font-family: var(--titillium);
+}
+.bookSell .show-card .card .card-body .distance i{
+    color: var(--red_color);
+    padding-top: 5px;
+}
+.bookSell .bookSell_btn{
+    width: 130px;
+    margin: 40px auto;
+
+}
+.bookSell .bookSell_btn .btn{
+    background-color: var(--red_color);
+    padding: 8px 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--gray_color);
+    font-family: var(--titillium);
+}
+.bookSell .bookSell_btn .btn:hover{
+    box-shadow: 4px 4px 5px rgba(217, 30, 55, 0.5);
+}
+
+/* e-Books */
+.e-bookSell{
+    margin: 30px 0;
+}
+.e-bookSell .bookSell-title{
+    font-size: 30px;
+    font-family: var(--titillium);
+    color: var(--blue_color);
+    margin-bottom: 20px;
+}
+.e-bookSell .show-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.e-bookSell .show-card .card{
+    width: 200px;
+    height: 400px;
+    padding: 12px 16px;
+    /* border: 1px solid gray; */
+    margin-bottom: 30px;
+    margin-right: 40px;
+    cursor: pointer;
+    background: none;
+    border: 1px solid rgba(47, 59, 78, 0.5);
+}
+.e-bookSell .show-card .card:hover{
+    box-shadow: 2px 4px 5px rgba(47, 59, 78, 0.5);
+}
+
+.e-bookSell .show-card .card .card-img{
+    width: 166px;
+    height: 280px;
+    box-shadow: 2px 4px 5px rgba(47, 59, 78, 0.5);
+}
+.e-bookSell .show-card .card .card-img img{
+    width: 100%;
+    height: 100%;
+    /* box-shadow: 2px 4px 5px rgb(0 0 0 / 30%); */
+}
+.e-bookSell .show-card .card .card-body{
+    padding: 12px 0;
+}
+.e-bookSell .show-card .card .card-body .card-title{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--ubuntu);
+    color: var(--blue_color);
+    margin-bottom: 5px;
+    text-shadow: 2px 4px 5px rgba(47, 59, 78, 0.5);
+}
+.e-bookSell .show-card .card .card-body .book-price{
+    color: var(--blue_color);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: var(--ubuntu);
+    text-shadow: 2px 4px 5px rgba(47, 59, 78, 0.5);
+}
+.e-bookSell .show-card .card .card-body .distance{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.e-bookSell .show-card .card .card-body .distance i{
+    color: var(--red_color);
+    padding-top: 5px;
+    font-size: 18px;
+}
+.e-bookSell .bookSell_btn{
+    width: 130px;
+    margin: 40px auto;
+
+}
+.e-bookSell .bookSell_btn .btn{
+    background-color: var(--red_color);
+    padding: 8px 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--gray_color);
+    font-family: var(--titillium);
+}
+.e-bookSell .bookSell_btn .btn:hover{
+    box-shadow: 4px 4px 5px rgba(217, 30, 55, 0.6);
+}

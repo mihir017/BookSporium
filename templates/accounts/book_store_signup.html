@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore Sign Up</title>
+    <link rel="stylesheet" href="{% static 'css/signin.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    <script src="https://kit.fontawesome.com/152ca9cf76.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="{% static 'images/BOOKSPORIUM-2.png' %}" alt="">
+            </div>
+        </div>
+    </header>
+    <section class="signin-form">
+        <div class="form-create">
+            <h2 class="form-header">Create BookStore Account</h2>
+            <form method="POST" action="/afterBookStoresignup/" id="signin">
+            {% csrf_token %}
+                <div class="form-group">
+                    <label for="store-name">Enter Store Name:</label>
+                    <input type="text" name="store_name" id="store-name">
+                </div>
+                <div class="form-group">
+                    <label for="seller-name">Enter Seller Name :</label>
+                    <input type="text" name="seller_name" id="seller-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Enter Email ID:</label>
+                    <input type="email" name="email" id="email">
+                    <span class="error_msg">{{ email_msg }}</span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Enter Password:</label>
+                    <input type="password" name="password" id="password">
+                    <!-- <p class="error_msg">{{ password_msg }}</p> -->
+                    <span class="error_msg">{{ password_msg }}</span>
+                </div>
+                <div class="form-group">
+                    <label for="number">Enter Phone Number:</label>
+                    <input type="text" name="ph_number" id="number">
+                    <span class="error_msg">{{ phone_msg }}</span>
+                </div>
+                <!-- <a href="#" class="forgot-password">Forgot Your Password?</a> -->
+                <input type="submit" value="Create Account" class="sign-btn btn">
+                <p class="detail">By continuing, you agree to BookSporium <span>Conditions
+                    of Use</span> and <span>Privacy Notice.</span></p>
+                <div class="new-user">
+                    <p class="for-new">Already User? >></p>
+                    <a href="/signin/" class="new-register btn">Open Account</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <div class="footer-logo">
+                        <img src="{% static 'images/BOOKSPORIUM_footer.png' %}" alt="">
+                    </div>
+                    <h4>BookSporium is for Buy and earn Money by selling Your old Book.</h5>
+                </div>
+                <div class="row">
+                    <h5 class="footer-title">About us</h5>
+                    <ul>
+                        <li><a href="#">Book, Magezin</a></li>
+                        <li><a href="#">Sell any Book</a></li>
+                        <li><a href="#">Download e-Book</a></li>
+                        <li><a href="#">Rented Book</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <h5 class="footer-title">Contact us</h5>
+                    <ul>
+                        <li><a href="#">3/13 naman Street</a></li>
+                        <li><a href="#">Borivali, mumbai</a></li>
+                        <li><a href="#">Maharastra-45128</a></li>
+                        <li><a href="#">123-154-7648</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <h5 class="footer-title">Follow us</h5>
+                    <div class="social_icon">
+                        <a href="#"><i id="fb" class="fab fa-facebook"></i></a>
+                        <a href="#"><i id="instagram" class="fab fa-instagram"></i></a>
+                        <a href="#"><i id="pinterest" class="fab fa-pinterest"></i></a>
+                        <a href="#"><i id="twitter" class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p id="copyright">Copyright &copy;: www.booksporium.com</p>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/signup.js' %}"></script>
+</body>
+
+</html>

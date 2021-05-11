@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Merchat payment page</title>
+</head>
+<body>
+    <h2 style="color: rgb(7, 24, 70); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Redirecting You to the Merchant</h2>
+    <form action="https://securegw-stage.paytm.in/order/process" method="POST" name="paytm">
+    <!-- <form action="https://securegw.paytm.in/theia/api/v1/initiateTransaction?mid={param.MID}&orderId={param.ORDER_ID}" method="POST" name="paytm"> -->
+        <!-- {% for key,value in param.items %} -->
+        <!-- <input type="text" name="{{key}}" value="{{value}}"> -->
+        <!-- <input type="hidden" name="requestType" value="{{param.requestType}}"> -->
+        <input type="hidden" name="mid" value="{{param.MID}}">
+        <input type="hidden" name="WEBSITE" value="{{param.WEBSITE}}">
+        <input type="hidden" name="orderId" value="{{param.ORDER_ID}}">
+        <input type="hidden" name="callbackUrl" value="{{param.CALLBACK_URL}}">
+        <input type="hidden" name="TXN_AMOUNT" value="{{param.TXN_AMOUNT}}">
+        <!-- <input type="hidden" name="txnAmount" value="{{param.txnAmount.currency}}"> -->
+        <input type="hidden" name="CUST_ID" value="{{param.CUST_ID}}">
+        <input type="hidden" name="CHANNEL_ID" value="{{param.CHANNEL_ID}}">
+        <input type="hidden" name="CHECKSUMHASH" value="{{param.CHECKSUMHASH}}">
+        <!-- {% endfor %} -->
+        <!-- <input type="text"> -->
+    </form>
+    <script>
+        document.paytm.submit();
+    </script>
+</body>
+</html>

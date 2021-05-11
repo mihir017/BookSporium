@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --gray_color : rgba(240, 241, 242, 1);
+    --blue_color : rgba(47, 59, 78, 1);
+    --red_color : rgba(217, 30, 55, 1);
+    --ubuntu : 'Ubuntu', sans-serif;
+    --titillium : 'Titillium Web', sans-serif;
+}
+header{
+    width:  100%;
+}
+a{
+    text-decoration: none;
+    color: var(--gray_color);
+    font-family: var(--ubuntu);
+}
+.container{
+    margin: 0 70px;
+}
+.logo{
+    margin-top: 30px;
+}
+.signin-form .form-create{
+    width: 490px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px solid rgba(47, 59, 78, 0.5);
+    padding: 10px 40px;
+    margin-bottom: 50px;
+}
+.signin-form .form-create .form-header{
+    font-family: var(--ubuntu);
+    text-transform: uppercase;
+    font-size: 35px;
+    color: var(--blue_color);
+    margin: 10px 0;
+}
+.signin-form .form-create .form-group{
+    padding-top: 20px;
+}
+.signin-form .form-create .form-group label{
+    font-size: 18px;
+    font-family: var(--titillium);
+    color: var(--blue_color);
+}
+.signin-form .form-create .form-group input{
+    display: block;
+    width: 400px;
+    margin-top: 5px;
+    padding: 10px 15px;
+    font-size: 18px;
+    outline: none;
+    color: var(--blue_color);
+    border: 1px solid rgba(47, 59, 78, 0.5);
+    border-radius: 10px;
+}
+.signin-form .form-create form .forgot-password{
+    margin-top: 10px;
+    display: block;
+    font-size: 16px;
+    color: #05638B;
+    text-decoration: none;
+    font-family: var(--titillium);  
+}
+.signin-form .form-create form .forgot-password:hover{
+    text-decoration: underline;
+}
+.signin-form .form-create form .btn{
+    margin-top: 20px;
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #D91E37;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: var(--gray_color);
+    font-family: var(--ubuntu);
+    letter-spacing: 1px;
+}
+.signin-form .form-create form .sign-btn:hover{
+    box-shadow: 4px 4px 5px rgba(217, 30, 55, 0.5);
+}
+.signin-form .form-create .error_msg{
+    display: block;
+    margin-top: 5px;
+    color: #045a80;
+    font-family: var(--ubuntu);
+    font-size: 18px
+}
+.signin-form .form-create form .detail{
+    margin-top: 25px;
+    font-family: var(--ubuntu);
+    /* color: var(--blue_color); */
+    opacity: .8;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+.signin-form .form-create form .detail span{
+    color: #045a80;
+    opacity: 1;
+    cursor: pointer;
+}
+.signin-form .form-create form .detail span:hover{
+    text-decoration: underline;
+}
+.signin-form .form-create form .new-user{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.signin-form .form-create form .new-user .for-new{
+    font-size: 15px;
+    font-family: var(--titillium);
+    color:rgba(47, 59, 78, 0.8);
+}
+.signin-form .form-create form .new-user .new-register{
+    margin-top: -10px;
+    background-color: #2f3b4ede;
+    width: auto;
+    text-decoration: none;  
+}
+.signin-form .form-create form .new-user .new-register:hover{
+    box-shadow: 4px 4px 5px rgba(47, 59, 78, 0.5);
+}
+/* BookStore Account */
+.signin-form .form-create form .new-bookstore-user{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+.signin-form .form-create form .new-bookstore-user .for-newStore{
+    font-size: 14px;
+    font-family: var(--titillium);
+    color:rgba(47, 59, 78, 0.8);
+}
+.signin-form .form-create form .new-bookstore-user .new-store-register{
+    margin-top: -10px;
+    background-color: #2f3b4ede;
+    width: auto;
+    text-decoration: none;  
+}
+.signin-form .form-create form .new-bookstore-user .new-store-register:hover{
+    box-shadow: 4px 4px 5px rgba(47, 59, 78, 0.5);
+}

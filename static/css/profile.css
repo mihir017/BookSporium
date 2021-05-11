@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --gray_color : rgba(240, 241, 242, 1);
+    --blue_color : rgba(47, 59, 78, 1);
+    --red_color : rgba(217, 30, 55, 1);
+    --ubuntu : 'Ubuntu', sans-serif;
+    --titillium : 'Titillium Web', sans-serif;
+}
+.posts h2{
+    font-family: var(--ubuntu);
+    font-weight: bold;
+    color: var(--blue_color);
+    margin-top: 2rem;
+    margin-bottom: .8rem;
+    font-size: 2rem;
+}
+
+.container h2 {
+    font-family: var(--titillium);
+    /* text-align: center; */
+    font-size: 1.8rem;
+    color: var(--blue_color);
+    width: 300px;
+    margin-left: 100px;
+    padding-top: 1.2rem;
+    /* border-bottom: 1px solid var(--main-color); */
+}
+.sign_form {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    /* border: 2px solid black; */
+    margin-top: 1.5rem;
+}
+.sign_form .field {
+    display: flex;
+    flex-direction: column;
+}
+.sign_form .field label{
+    padding-top: 1rem;
+    font-family: var(--titillium);
+    /* letter-spacing: 1px; */
+    font-size: 1.1rem;
+}
+.sign_form .field .input{
+    /* width: 300px; */
+    padding: 0.2rem .8rem .5rem 0;
+    margin-top: .3rem;
+    font-size: 1rem;
+    outline: none;
+    font-family: var(--ubuntu);
+    border: none;
+    border-bottom: 1px solid var(--blue_color);
+    color: var(--blue_color);
+}
+.sign_form .field-btn {
+    margin: 2.2rem 0 1.4rem 0;
+}
+.sign_form .field-btn .acc-btn{
+    padding: .5rem .8rem;
+    font-family: var(--ubuntu);
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--red_color);
+    background-color: var(--red_color);
+    color: white;
+    cursor: pointer;
+}
+.sign_form .field-btn .acc-btn:hover{
+    box-shadow: 1px 5px 10px rgba(217, 30, 55, 0.6);
+}
+.sign_form .login_all {
+    margin-bottom: 1.5rem;
+    font-family: var(--titillium);
+}
+.sign_form .login_all a{
+    font-family: var(--ubuntu);
+    color: var(--blue_color);
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+
+.profile .user-details {
+    display: grid;
+    grid-template-columns: 450px 600px;
+    grid-gap: 10px;
+    margin: 10px 0 40px 0;
+}
+
+.profile .user-details .user-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.4rem;
+}
+.profile .user-details .user-img .img{
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    margin: auto;
+    background: url("./img/—Pngtree—vector\ business\ man\ icon_4184077.png");
+    background-position: center;
+    background-size: cover;
+    border: 2px solid rgb(212, 212, 212);
+}
+.profile .user-details .user-img .img img{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+.profile .user-details .user-img .change_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile .user-details .user-img .change_img #p-img{
+    display: none;
+}
+.profile .user-details .user-img .change_img .c-img{
+    font-family: var(--titillium);
+    border: 1px solid var(--blue_color);
+    height: 30px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.profile .user-details .user-img .change_img .c-btn{
+    padding: .6rem 1.2rem;
+    font-size: 1.1rem;
+    outline: none;
+    color: white;
+    background-color: var(--red_color);
+    border: 1px solid rgb(172, 170, 170);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--ubuntu);
+    transition: all .5s ease-in;
+}
+.profile .user-details .user-img .change_img .c-btn:hover{
+    box-shadow: 1px 5px 10px rgba(217, 30, 55, 0.6);
+}
+.user-info a{
+    margin-top: 1rem;
+    font-family: var(--titillium);
+    font-size: 1rem;
+    margin-bottom: -1rem;
+    color: var(--red_color);
+}
+.user-info a:hover{
+    text-decoration: underline;
+}
+.logout .log_btn{
+    padding: .6rem 1.2rem;
+    font-size: 1.1rem;
+    outline: none;
+    color: white;
+    background-color: var(--red_color);
+    border: 1px solid rgb(172, 170, 170);
+    border-radius: 5px;
+    font-family: var(--ubuntu);
+    transition: all .5s ease-in;
+}
+.logout .user-logout {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+
+
+

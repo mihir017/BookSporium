@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --gray_color : rgba(240, 241, 242, 1);
+    --blue_color : rgba(47, 59, 78, 1);
+    --red_color : rgba(217, 30, 55, 1);
+    --ubuntu : 'Ubuntu', sans-serif;
+    --titillium : 'Titillium Web', sans-serif;
+}
+footer{
+    height: 230px;
+    width: 100%;
+    background: var(--blue_color);
+}
+footer .content{
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    padding-top: 30px;
+}
+footer .content .footer-title{
+    color: var(--gray_color);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+    font-family: var(--ubuntu);
+}
+footer .content ul li{
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    color: var(--gray_color);
+    /* font-weight: 200; */
+    font-family: var(--titillium);
+    opacity: .8;
+}
+footer .content ul li a:hover{
+    color: var(--red_color);
+}
+footer .content .social_icon i{
+    padding-right: 15px;
+    font-size: 18px;
+}
+footer .content h4{
+    width: 209px;
+    font-size: 9px;
+    color: var(--gray_color);
+    opacity: .5;
+    font-family: var(--titillium);
+    margin-top: 12px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+#fb:hover{
+    color: rgb(30, 30, 241);
+}
+#instagram:hover{
+    color: rgb(230, 127, 10);
+}
+#pinterest:hover{
+    color: red;
+}
+#twitter:hover{
+    color: rgb(0, 162, 255);
+}
+#copyright{
+    font-family: var(--titillium);
+    color: var(--gray_color);
+    opacity: .8;
+    font-size: 12px;
+    margin-left: 80px;
+    letter-spacing: 2px;
+}
