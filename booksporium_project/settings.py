@@ -26,7 +26,7 @@ SECRET_KEY = '-2x^939stutciy^a7$=6!7vb3_$yn@c92m2a*)r=(hn7hl&62c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1',"https://booksporium.herokuapp.com/"]
+ALLOWED_HOSTS = ['127.0.0.1',"booksporium.herokuapp.com"]
 
 
 # Application definition
